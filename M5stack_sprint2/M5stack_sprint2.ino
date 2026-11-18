@@ -176,7 +176,7 @@ void loop() {
   M5.update();
   recibir();
 
-  if (M5.BtnB.wasPressed()) pedirSiguientePerfil();  // la Raspberry Pi responde con el nuevo perfil
+  if (M5.BtnC.wasPressed()) pedirSiguientePerfil();  // la Raspberry Pi responde con el nuevo perfil
 
   avisos();
   if (puerta && millis() - ultimoDibujo > 5000) redibujar = true;  // refresca el aviso de datos viejos
